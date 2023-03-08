@@ -8,6 +8,9 @@ from webdriver_manager.chrome import ChromeDriverManager
 # open the browser
 driver = webdriver.Chrome(service=ChromeService(ChromeDriverManager().install()))
 
+# run the browser in fullscreen
+browser.maximize_window()
+
 # go to the url
 driver.get("https://practicetestautomation.com/practice-test-login")
 
